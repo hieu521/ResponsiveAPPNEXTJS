@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::before,
+::after {
+  border-width: 0;
+}
+h1,
+h2,
+p {
+  color: white;
+}
+@layer components {
+  .border-gradient-custom {
+    border: 2px solid;
+    border-image-source: linear-gradient(180deg, #000000 0%, #FFFFFF 100%);
+    border-image-slice: 1;
+  }
+}
+@media (max-width: 300px) {
+  .coin-img {
+    left: 20%; /* Adjust based on what looks good */
+    top: 15%;  /* Adjust based on what looks good */
+  }
+}
+@media (max-width: 290px) {
+  .relative img:last-child {
+    width: 20px; /* Further reduce width if needed */
+    left: 30%; /* Adjust left positioning */
+    top: 15%; /* Adjust top positioning */
+  }
+}
+
+

@@ -1,0 +1,13 @@
+@media (max-width: 300px) {
+    .coin-img {
+      left: 20%; /* Adjust based on what looks good */
+      top: 15%;  /* Adjust based on what looks good */
+    }
+  }
+  @media (max-width: 290px) {
+    .relative img:last-child {
+      width: 20px; /* Further reduce width if needed */
+      left: 30%; /* Adjust left positioning */
+      top: 15%; /* Adjust top positioning */
+    }
+  }
